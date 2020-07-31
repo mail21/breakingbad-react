@@ -4,7 +4,9 @@ import spinner from "./../image/spinner.gif";
 
 function CharactersGrid({ characters, isLoading }) {
   return isLoading ? (
-    <img src={spinner} alt="spinner" />
+    <div className="center">
+      <img src={spinner} alt="spinner" width="100" />
+    </div>
   ) : (
     <section className="cards">
       {characters.map((character) => (
